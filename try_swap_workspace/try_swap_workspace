@@ -48,7 +48,7 @@ basicChecks() {
 		notify "Seriously mate!!" "Start Hyprland before this script"
 		exit 1
 	}
-	pgrep -x Hyprland &>/dev/null || {
+	pgrep Hyprland &>/dev/null || {
 		notify "Make Sure Hyprland Session is running."
 		exit 1
 	}
